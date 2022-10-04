@@ -29,10 +29,10 @@ void main() {
 	
   } else {
   	/*Estamos en el proceso P1*/
-   	wait(NULL);		
+   	pid_hijo=wait(NULL);		
      	printf("- Soy el proceso P1.\n");
      	printf("Mi PID es: %d \n", getpid());
-  	printf("Mi PPID es: %d \n", getppid());
+  	printf("El PID de mi hijo (P2) es: %d \n", pid_hijo);
   } 
   exit(0);
 }
