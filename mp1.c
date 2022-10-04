@@ -19,7 +19,7 @@ void main() {
 	
   } else{
   	/*Estamos en el proceso padre*/
-   	pid_hijo = wait(NULL);					// espera a que termine el hijo y luego empieza el padre
+   	pid_hijo = wait(NULL);					// espera a que termine el hijo y almacena el PID del hijo en la variable
      	printf("- Soy el proceso padre.\n");
      	printf("Mi PID (el del proceso padre) es: %d \n", getpid());
   	printf("El PID del hijo es %d \n", pid_hijo);	
